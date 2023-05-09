@@ -1,13 +1,11 @@
+import Card from "./Card";
+
 const Results = ({ results }: any) => {
   return (
     <>
-      <div>
+      <div className="grid max-w-6xl py-4 mx-auto gap-7 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
         {results.map((data: dataResultProps) => {
-          return (
-            <div key={data.id}>
-              <p>{data.original_title}</p>
-            </div>
-          );
+          return <Card key={data.id} result={data} />;
         })}
       </div>
     </>

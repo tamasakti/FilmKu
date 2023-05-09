@@ -21,17 +21,15 @@ const Header = () => {
           />
         </div>
         <div className="">
-          <Link href="/">
-            <div className="flex items-center space-x-5">
-              <DarkModeSwitch />
-              <h2 className="text-2xl">
-                <span className="px-2 py-1 font-bold rounded-lg bg-amber-500">
-                  IMDB
-                </span>
-                <span className="hidden text-xl sm:inline">Clone</span>
-              </h2>
-            </div>
-          </Link>
+          <div className="flex items-center space-x-5">
+            <DarkModeSwitch />
+            <h2 className="text-2xl">
+              <span className="px-2 py-1 font-bold rounded-lg bg-amber-500">
+                IMDB
+              </span>
+              <span className="hidden text-xl sm:inline">Clone</span>
+            </h2>
+          </div>
         </div>
       </div>
     </>
